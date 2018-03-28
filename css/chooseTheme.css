@@ -1,0 +1,83 @@
+body {
+    background-color: #e2e8b7;
+}
+#content{
+    margin-top: 10%;
+}
+#sampleContainer {
+    margin-top: 10%;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto 0;
+    margin-top: 40px;
+    /*    background-color: antiquewhite;*/
+}
+
+#sampleContainer li {
+    margin: 0 auto;
+
+}
+
+.sample {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    list-style: none;
+    margin: 2%;
+    display: inline-grid;
+    background-repeat: no-repeat;
+}
+
+.sample > p {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 8;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+#dropbox {
+    border: dashed 2px grey;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#con {
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#con p {
+    position: absolute;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px grey;
+    z-index: 150px;
+}
+
+#description {
+    z-index: 150;
+    background-color: rgba(3,3,3,0.3);
+    height: 120%;
+    width: 120%;
+    margin: -50px;
+    margin-top: -10%;
+    position: absolute;
+    display: none;
+}
+
+#description img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin-left: 400px;
+    margin-top: 180px;
+}

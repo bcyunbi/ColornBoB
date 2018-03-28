@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>index2</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Ranchers" rel="stylesheet">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/jquery-color.js"></script>
+
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+    <script>
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,
+                function(m, key, value) {
+                    vars[key] = value;
+                }
+            );
+            return vars;
+        }
+        var fType = getUrlVars()["type"];
+        
+        var t = 5;
+        //顯示倒數秒收
+        function showTime() {
+            t -= 1;
+            if (t == 0) {
+                location.href = '../html/chooseTheme.html';
+            }
+            setTimeout("showTime()", 1000);
+        }
+        $(document).ready(function() {
+            getUrlVars();
+            $('.myh1 span').css('background-color',localStorage.test2);
+            $('body').css('background-color',localStorage.test3);
+            var state = true;
+            $('h1').click(function() {
+                $('h1').removeClass('myh2');
+                $('#clickimg').addClass('hide');
+                $('h1').animate({
+                        top: '-100px',
+                        opacity: '0.5',
+                    },
+                    3000,
+                    function() {
+                        $('h1').addClass('hide');
+                        $('#ImgBob').addClass('hide');
+                    });
+                $('#particles-js').animate({
+                        opacity: '0'
+                    },
+                    3000,
+                    function() {
+                        $('#particles-js').addClass('hide');
+                    });
+                $("body").animate({
+                        backgroundColor: "#e2e8b7",
+                    },
+                    1000,
+                    function() {
+                        $("body").css("background-color", "#e2e8b7");
+                        showTime();
+                    });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- particles.js container -->
+    <div id="background">
+        <div id="particles-js"></div>
+        <h1 class="myh1 myh2">
+            <span>C</span>
+            <span>O</span>
+            <span>L</span>
+            <span>O</span>
+            <span>R</span>
+            <span>N</span>
+            <span>B</span>
+            <span>O</span>
+            <span>B</span>
+            <!--<div style="clear: both"></div>-->
+        </h1>
+        <img src="../img/2.png" class="ImgAnywhere" id="ImgBob">
+        <!-- scripts -->
+        <script src="../js/particles.js"></script>
+        <script src="../js/app.js"></script>
+        <!--
+        <script type="text/javascript">
+            //設定倒數秒數
+            var t = 5;
+            //顯示倒數秒收
+            function showTime() {
+                t -= 1;
+                if (t == 0) {
+                    location.href = 'http://www.mcjh.kl.edu.tw/';
+                }
+                //每秒執行一次,showTime()
+                setTimeout("showTime()", 1000);
+            }
+            //執行showTime()
+            showTime();
+        </script>
+-->
+    </div>
+
+
+</body>
+
+</html>

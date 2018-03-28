@@ -1,0 +1,191 @@
+html,body
+{ 
+	width:100%;
+	height:100%;
+    padding: 0;
+    margin: 0;
+}
+::selection{
+    background: rgba(252, 246, 248, 0);
+}
+#particles-js
+{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.59);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  
+}
+.myh1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.myh1:hover{
+    cursor: pointer;
+    /*https://chentsu.wordpress.com/2014/01/07/css-cursor-%EF%BC%88%E6%BB%91%E9%BC%A0%E6%B8%B8%E6%A8%99%EF%BC%89%E5%B1%AC%E6%80%A7/ 
+改變滑鼠屬性*/
+}
+.myh1 span{
+    font-size: 50px;
+    color: rgba(252, 172, 85, 0.83);
+    background: rgba(255, 248, 65, 0.88);
+    padding: 20px 35px;
+    font-family: 'Luckiest Guy', cursive;
+    display: table-cell;
+    box-shadow: inset 0 0 5px #ede861,0 5px 0 rgba(255, 255, 255, 0);
+    border-radius: 100px;
+     box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(255, 255, 255, 0.51) , 0 15px 5px rgba(0,0,0,0);
+}
+.myh2 span{
+    animation: animate 1.5s infinite;
+}
+@keyframes animate
+{
+    0%{
+        transform: translateY(0px);
+         box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(255, 255, 255, 0.51) , 0 15px 5px rgba(0,0,0,0);
+    }
+    50%{
+        transform: translateY(-20px);
+        box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(247, 247, 46, 0.52) , 0 15px 5px rgba(0,0,0,0);
+    }
+    100%{
+        transform: translateY(0px);
+        box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(247, 247, 46, 0.52), 0 15px 5px rgba(0,0,0,0);
+    }
+}
+.myh2 span:nth-child(1)
+{
+animation-delay: .2s;    
+}
+.myh2 span:nth-child(2)
+{
+animation-delay: .4s;    
+}
+.myh2 span:nth-child(3)
+{
+animation-delay: .6s;    
+}
+.myh2 span:nth-child(4)
+{
+animation-delay: .8s;    
+}
+.myh2 span:nth-child(5)
+{
+animation-delay: 1.0s;    
+}
+.myh2 span:nth-child(6)
+{
+animation-delay: 1.2s;    
+}
+.myh2 span:nth-child(7)
+{
+animation-delay: 1.4s;    
+}
+.myh2 span:nth-child(8)
+{
+animation-delay: 1.6s;    
+}
+.myh2 span:nth-child(9)
+{
+animation-delay: 1.8s;    
+}
+
+.myh1Fly span{
+    animation: Flyani 5s infinite;
+}
+@keyframes Flyani
+{
+    0%{
+        transform: translateY(0px);
+         box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(255, 255, 255, 0.51) , 0 15px 5px rgba(0,0,0,0);
+    }
+    10%{
+        transform: translateY(-10px);
+         box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(255, 255, 255, 0.51) , 0 15px 5px rgba(0,0,0,0);
+    }
+    100%{
+        transform: translateY(-1000px);
+         box-shadow: inset 0 0 50px rgb(255, 255, 255),0 5px 0 rgba(255, 255, 255, 0.51) , 0 15px 5px rgba(0,0,0,0);
+        opacity: 0;
+    }
+}
+#clickimg{
+    margin-top: 20px;
+    width: 15%;
+    margin-left: 40%;
+}
+.ImgAnywhere{
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    animation: animate3 2.5s infinite;
+}
+@keyframes animate3
+{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+/*
+.text
+{
+    position:absolute;
+    margin-top: -550px;
+    margin-left: 300px;
+    text-align: center;
+    display: inline-block;
+    transition: .5s;
+}
+.text span
+{
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    display: block;
+    line-height: 80px;
+    font-family: 'Ranchers', cursive;
+    font-weight: bold;
+    color: rgba(182, 156, 109, 0.66);
+    font-size: 30px;
+    float: left;
+    transition: .5s;
+}
+.text span
+{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.text:hover span
+{
+    transform: translateY(-5px);
+    color: rgba(182, 156, 109, 0.66);
+    box-shadow: 0 20px 20px rgba(0,0,0,.1), inset 0px 0 20px rgba(171, 152, 152, 0.2);
+}
+.text:hover span:nth-child(even)
+{
+    transform: skewY(15deg);
+    color: #a0a0a0;
+    box-shadow: 0 30px 20px rgba(0,0,0,.1), inset 0px 0 30px rgba(171, 152, 152, 0.2);
+}
+
+*/
