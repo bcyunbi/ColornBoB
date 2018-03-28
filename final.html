@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>index2</title>
+    <title>CollornBob | Final</title>
     <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
     <meta name="author" content="Vincent Garreau" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="../css/style.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Ranchers" rel="stylesheet">
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/jquery-color.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-color.js"></script>
 
     <style>
         .hide {
@@ -37,7 +37,7 @@
         function showTime() {
             t -= 1;
             if (t == 0) {
-                location.href = '../html/chooseTheme.html';
+                location.href = 'chooseTheme.html';
             }
             setTimeout("showTime()", 1000);
         }
@@ -77,9 +77,7 @@
         });
     </script>
 </head>
-
 <body>
-    <!-- particles.js container -->
     <div id="background">
         <div id="particles-js"></div>
         <h1 class="myh1 myh2">
@@ -92,31 +90,11 @@
             <span>B</span>
             <span>O</span>
             <span>B</span>
-            <!--<div style="clear: both"></div>-->
         </h1>
-        <img src="../img/2.png" class="ImgAnywhere" id="ImgBob">
-        <!-- scripts -->
-        <script src="../js/particles.js"></script>
-        <script src="../js/app.js"></script>
-        <!--
-        <script type="text/javascript">
-            //設定倒數秒數
-            var t = 5;
-            //顯示倒數秒收
-            function showTime() {
-                t -= 1;
-                if (t == 0) {
-                    location.href = 'http://www.mcjh.kl.edu.tw/';
-                }
-                //每秒執行一次,showTime()
-                setTimeout("showTime()", 1000);
-            }
-            //執行showTime()
-            showTime();
-        </script>
--->
+        <img src="img/2.png" class="ImgAnywhere" id="ImgBob">
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
     </div>
-
 
 </body>
 
