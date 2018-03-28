@@ -9,15 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Ranchers|Handlee" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/pick.css">
+    <link rel="stylesheet" href="css/pick.css">
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/jquery-ui.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
 
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/jquery-color.js"></script>
-    <script src="../js/pick.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-color.js"></script>
+    <script src="js/pick.js"></script>
     <style>
         .hide {
             display: none;
@@ -34,7 +34,7 @@
             $('#menu img').addClass('hide');
             $("#w3s").click(function() {
                 var basefont = $('.colorbob div').css('background-color');
-                $("#w3s").attr("href", "../html/final.html?data=" + basefont);
+                $("#w3s").attr("href", "final.html?data=" + basefont);
                 localStorage.test2 = basefont;
             });
             $('#menu').mouseover(function() {
@@ -52,7 +52,7 @@
     <div id="container">
 
         <div>
-            <a href="../html/final.html" id="w3s"><img src="../img/success.png" id="success" onmouseout="this.src='../img/success.png'" onmouseover="this.src='../img/success_2.png'"></a>
+            <a href="final.html" id="w3s"><img src="img/success.png" id="success" onmouseout="this.src='img/success.png'" onmouseover="this.src='img/success_2.png'"></a>
         </div>
         <div id="newcolors">
             <div class="colorbob">
@@ -102,13 +102,12 @@
 
     <div class="bobmenu">
         <ul id="menu">
-            <li onclick="javascript:location.href='../html/index.html'"><img src="../img/bubbles.png"></li>
-            <li onclick="javascript:location.href='../html/chooseTheme.html'"><img src="../img/pantone.png"></li>
-            <li onclick="javascript:location.href='../html/pickcolor.html'"><img src="../img/palette.png"></li>
-            <li onclick="javascript:location.href='../html/introduce.html'"><img src="../img/laughing.png"></li>
+            <li onclick="javascript:location.href='index.html'"><img src="img/bubbles.png"></li>
+            <li onclick="javascript:location.href='chooseTheme.html'"><img src="img/pantone.png"></li>
+            <li onclick="javascript:location.href='pickcolor.html'"><img src="img/palette.png"></li>
+            <li onclick="javascript:location.href='introduce.html'"><img src="img/laughing.png"></li>
         </ul>
     </div>
-    <!--http://www.eyecon.ro/colorpicker/#-->
 </body>
 
 </html>
