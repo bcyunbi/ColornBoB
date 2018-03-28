@@ -3,15 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>first function</title>
+    <title>CollornBob | Choose BG</title>
     <link href="pickcolor.html">
-    <link rel="stylesheet" href="../css/chooseTheme.css">
+    <link rel="stylesheet" href="css/chooseTheme.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Ranchers|Handlee" rel="stylesheet">
-    <!--    <link rel="stylesheet" href="/resources/demos/style.css">-->
-
-
 </head>
 <script>
     var count = 5;
@@ -22,7 +19,7 @@
     function countdown() {
         count -= 1;
         if (count == 0) {
-            location.href = '../html/pickcolor.html';
+            location.href = 'pickcolor.html';
         }
         setTimeout("countdown()", 100);
     };
@@ -81,7 +78,7 @@
                     colorMix.length = 0;
                     colorMix.unshift(dragged);
                 }
-                $(this).attr('src', '../img/theme-0' + dragged + '.png');
+                $(this).attr('src', 'img/theme-0' + dragged + '.png');
 
                 //
                 themecontent = $("#position-0" + dragged + " p").text();
@@ -171,14 +168,14 @@
                    height:40px;
                    width:40px;
                     margin-left: 80%;
-                    margin-top: 80px;" src="../img/xx.png">
+                    margin-top: 80px;" src="img/xx.png">
         <p style="position: fixed;
                     margin-left: 40%;
                     margin-top: 380px;
                     color: white;
                     font-size:25px;
                     font-family: 'Handlee', cursive;">Drag the theme you like to the circle.</p>
-        <img style="margin-left:50%; margin-top: 300px;" id="pointer" src="../img/pointer.png">
+        <img style="margin-left:50%; margin-top: 300px;" id="pointer" src="img/pointer.png">
         <p style="position: fixed;
                     margin-left: 40%;
                     margin-top: 655px;
@@ -187,7 +184,7 @@
                     font-family: 'Handlee', cursive;">Double click the circle to comfirm the theme which is dragged in.</p>
         <img style="
                 margin-left: 50%;
-                margin-top: 580px;" id="pointer" src="../img/pointer.png">
+                margin-top: 580px;" id="pointer" src="img/pointer.png">
     </div>
     <div id="secondthemeWord">
         <p style="color:white;
@@ -201,22 +198,22 @@
     </div>
     <div id="content">
         <div id="sampleContainer">
-            <li id="position-01" class="sample" style=" background-image: url(../img/theme-01.png)">
+            <li id="position-01" class="sample" style=" background-image: url(img/theme-01.png)">
                 <p>RED</p>
             </li>
-            <li id="position-02" class="sample" style=" background-image: url(../img/theme-02.png)">
+            <li id="position-02" class="sample" style=" background-image: url(img/theme-02.png)">
                 <p>YELLOW</p>
             </li>
-            <li id="position-03" class="sample" style=" background-image: url(../img/theme-03.png)">
+            <li id="position-03" class="sample" style=" background-image: url(img/theme-03.png)">
                 <p>BLUE</p>
             </li>
-            <li id="position-04" class="sample" style=" background-image: url(../img/theme-04.png);display:none">
+            <li id="position-04" class="sample" style=" background-image: url(img/theme-04.png);display:none">
                 <p>GREEN</p>
             </li>
-            <li id="position-05" class="sample" style=" background-image: url(../img/theme-05.png);display:none">
+            <li id="position-05" class="sample" style=" background-image: url(img/theme-05.png);display:none">
                 <p>PURPLE</p>
             </li>
-            <li id="position-06" class="sample" style=" background-image: url(../img/theme-06.png);display:none">
+            <li id="position-06" class="sample" style=" background-image: url(img/theme-06.png);display:none">
                 <p>ORANGE</p>
             </li>
         </div>
