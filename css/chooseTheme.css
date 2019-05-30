@@ -1,5 +1,13 @@
 body {
   background-color: #e2e8b7;
+  margin: 0;
+}
+.infoZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh;
 }
 /* #content {
   margin-top: 10%;
@@ -72,9 +80,23 @@ body {
 }
 
 #description img {
-  position: fixed;
+  /* position: fixed; */
   width: 10vh;
   height: 10vh;
+  margin-top: 3vh;
   /* margin-left: 400px;
   margin-top: 180px; */
 }
+.infoWhite {
+  /* position: fixed; */
+  /* margin-left: 31%;
+    margin-top: 21%; */
+  margin: 0;
+  color: white;
+  font-size: 3vmin;
+  font-family: "Handlee", cursive;
+}
+/*  position: fixed;
+        /* margin-left: 31%;
+    margin-top: 21%; */
+/*  */
